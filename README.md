@@ -1,0 +1,2 @@
+# Elek
+Eliminate worst options
