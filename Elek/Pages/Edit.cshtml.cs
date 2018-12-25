@@ -53,9 +53,5 @@ namespace Elek.Pages
 
             return RedirectToPage("/Index");
         }
-
-        public void OnGet()
-        {
-        }
     }
 }

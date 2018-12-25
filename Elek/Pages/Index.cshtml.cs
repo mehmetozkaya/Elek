@@ -23,12 +23,7 @@ namespace Elek.Pages
         public async Task OnGetAsync()
         {
             Customers = await _db.Customers.AsNoTracking().ToListAsync();
-        }
-
-        public void OnGet()
-        {
-
-        }
+        }        
 
         public async Task<IActionResult> OnPostDeleteAsync(int id)
         {
