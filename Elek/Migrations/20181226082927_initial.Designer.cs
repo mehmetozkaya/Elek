@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Elek.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20181226073134_initial")]
+    [Migration("20181226082927_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,10 @@ namespace Elek.Migrations
 
                     b.Property<string>("Genre");
 
-                    b.Property<decimal>("Price");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<string>("Rating");
 
                     b.Property<DateTime>("ReleaseDate");
 
