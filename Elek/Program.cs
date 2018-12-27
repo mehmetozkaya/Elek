@@ -33,6 +33,7 @@ namespace Elek
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error occurred seeding the DB.");
+                    logger.LogError(ex, "An error occurred seeding the MOZK.");
                 }
             }
 
