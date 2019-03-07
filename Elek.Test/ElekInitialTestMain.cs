@@ -8,6 +8,7 @@ namespace Elek.Test
         [TestMethod]
         public void ElekInitialTest()
         {
+            Assert.IsTrue(true);
         }
     }
 }
